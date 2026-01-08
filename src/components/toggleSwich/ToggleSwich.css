@@ -1,0 +1,37 @@
+:root {
+  --toggle-swich-bg: #232428;
+  --toggle-boarder: #232428;
+  --toggle-bg: #fff;
+}
+
+.toggle-wrap {
+  background-color: #a9a7a7;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.toggle-input {
+  display: none;
+}
+
+.toggle-swich {
+  height: 40px;
+  width: 40px;
+  background: var(--toggle-swich-bg);
+  border-radius: 50%;
+  transition: all .5s;
+}
+.toggle-wrap label{
+  width: 100px;
+  height: 40px;
+  border: 3px solid var(--toggle-boarder);
+  border-radius: 40px;
+  padding: .25em;
+  background: var(--toggle-bg);
+}
+
+.toggle-input:checked ~ .toggle-swich {
+  background: orange;
+  transform: translateX(calc(100px - 40px));
+}

@@ -3,6 +3,7 @@ import { Loading2 } from "./components/loadingAnimation/Loading2"
 import { RgbButton } from "./components/rgbButton/RgbButton"
 import { Searchbar } from "./components/searchbar/Searchbar"
 import { TileCard } from "./components/tileCard/TileCard"
+import { ToggleSwich } from "./components/toggleSwich/ToggleSwich"
 import { WordCarousel } from "./components/wordCarousel/WordCarousel"
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       {/* <TileCard/> */}
       {/* <Loading1/> */}
       {/* <Loading2/> */}
-      <WordCarousel/>
+      {/* <WordCarousel/> */}
+      <ToggleSwich/>
     </>
   )
 }
