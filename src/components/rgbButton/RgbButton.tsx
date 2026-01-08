@@ -2,9 +2,9 @@ import "./RgbButton.css";
 
 export const RgbButton = () => {
   return (
-  <div className="container">
-    <div className="button-border">
-        <button type="button" className="button">
+  <div className="rgb-container">
+    <div className="rgb-button-border">
+        <button type="button" className="rgb-button">
             Press Button!
         </button>
     </div>

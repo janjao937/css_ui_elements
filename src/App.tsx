@@ -1,5 +1,3 @@
-// import './App.css'
-
 import { RgbButton } from "./components/rgbButton/RgbButton"
 import { Searchbar } from "./components/searchbar/Searchbar"
 

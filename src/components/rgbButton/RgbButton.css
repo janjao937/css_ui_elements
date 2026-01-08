@@ -1,12 +1,4 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--body-bg);
-  font-family: var(--font-family);
-}
-
 :root {
-  --font-family: "Karla", sans-serif;
   --body-bg: #1E1F25;
   --btn-bg: #000;
   --btn-color: #cbcbcb;
@@ -18,14 +10,15 @@ html, body {
   --grad-color5: #6a0d83;
 }
 
-.container {
+.rgb-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: var(--body-bg);
 }
 
-.button-border {
+.rgb-button-border {
   background: linear-gradient(115deg, #eeaf61,
   #fb9062,
   #ee5d6c,
@@ -48,7 +41,7 @@ other way no button-boarder
     #6a0d83);
   border-image-slice: 1; 
 } */
-.button {
+.rgb-button {
   border: none; 
   background: var(--btn-bg);
   color: var(--btn-color);
@@ -57,7 +50,7 @@ other way no button-boarder
   letter-spacing: .1em;
 }
 
-.button-border:hover {
+.rgb-button-border:hover {
   background: linear-gradient(230deg, #eeaf61,
     #fb9062,
     #ee5d6c,
@@ -65,7 +58,7 @@ other way no button-boarder
     #6a0d83);
   
 }
-.button-border:hover .button {
+.rgb-button-border:hover .button {
   color: var(--btn-color-hover);
   padding: 1.1em, 1.6em;
 }
