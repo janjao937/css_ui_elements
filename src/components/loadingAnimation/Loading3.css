@@ -1,0 +1,26 @@
+:root {
+  --spiner: rgba(234, 220, 220, 0.721);
+  --spiner-active: rgb(255, 191, 0);
+}
+
+.loading3-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading3-loader {
+  width: 100px;
+  height: 100px;
+  border: 1em solid var(--spiner);
+  border-radius: 50%;
+  border-top: 1em solid var(--spiner-active);
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

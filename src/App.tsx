@@ -1,6 +1,7 @@
 import { FlashCard } from "./components/flashcard/FlashCard"
 import { Loading1 } from "./components/loadingAnimation/Loading1"
 import { Loading2 } from "./components/loadingAnimation/Loading2"
+import { Loading3 } from "./components/loadingAnimation/Loading3"
 import { RgbButton } from "./components/rgbButton/RgbButton"
 import { Searchbar } from "./components/searchbar/Searchbar"
 import { TileCard } from "./components/tileCard/TileCard"
@@ -18,7 +19,8 @@ function App() {
       {/* <Loading2/> */}
       {/* <WordCarousel/> */}
       {/* <ToggleSwich/> */}
-      <FlashCard/>
+      {/* <FlashCard/> */}
+      <Loading3/>
     </>
   )
 }
