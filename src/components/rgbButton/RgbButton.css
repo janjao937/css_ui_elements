@@ -8,6 +8,7 @@
   --grad-color3: #ee5d6c;
   --grad-color4: #ce4993;
   --grad-color5: #6a0d83;
+  --font-family: "Karla", sans-serif;
 }
 
 .rgb-container {
@@ -16,6 +17,7 @@
   align-items: center;
   height: 100vh;
   background-color: var(--body-bg);
+  font-family: var(--font-family);
 }
 
 .rgb-button-border {
