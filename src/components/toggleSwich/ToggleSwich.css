@@ -2,6 +2,8 @@
   --toggle-swich-bg: #232428;
   --toggle-boarder: #232428;
   --toggle-bg: #fff;
+  --toggle-circle-size: 40px;
+  --toggle-width: 100px
 }
 
 .toggle-wrap {
@@ -16,15 +18,15 @@
 }
 
 .toggle-swich {
-  height: 40px;
-  width: 40px;
+  height: var(--toggle-circle-size);
+  width: var(--toggle-circle-size);
   background: var(--toggle-swich-bg);
   border-radius: 50%;
   transition: all .5s;
 }
 .toggle-wrap label{
   width: 100px;
-  height: 40px;
+  height: var(--toggle-circle-size);
   border: 3px solid var(--toggle-boarder);
   border-radius: 40px;
   padding: .25em;
@@ -33,5 +35,5 @@
 
 .toggle-input:checked ~ .toggle-swich {
   background: orange;
-  transform: translateX(calc(100px - 40px));
+  transform: translateX(calc(var(--toggle-width) - var(--toggle-circle-size)));
 }
