@@ -1,0 +1,37 @@
+:root {
+  --bg-word: #5134ff;
+}
+
+.wordcarousel-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wordcarousel-container h1:after {
+  content: "";
+  animation: 6s swap infinite;
+  background-color: var(--bg-word);
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+@keyframes swap {
+  0% {
+    content: "BananaDev";
+  }
+  25% {
+    content: "GameDev";
+  }
+  50% {
+    content: "Full-stack Dev";
+  }
+  75% {
+    content: "Backend Dev";
+  }
+  100% {
+    content: "Boonyakit";
+  }
+}
