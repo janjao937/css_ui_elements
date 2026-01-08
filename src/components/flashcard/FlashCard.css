@@ -1,0 +1,44 @@
+.flash-card-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+:root {
+  --jeopardy-yellow: rgb(255, 185, 55);
+  --font-color-main: black;
+}
+.flash-card {
+  height: 200px;
+  width: 350px;
+  background: var(--jeopardy-yellow);
+  color: var(--font-color-main);
+  padding: 2em;
+  margin: 2em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  transition: transform .6s;
+  transform-style: preserve-3d;
+}
+
+.flash-card:hover {
+  transform: rotateY(180deg);
+}
+.flash-card-back {
+  display: none;
+}
+
+.flash-card:hover .flash-card-back{
+  display: block;
+  transform: rotateY(180deg);
+}
+.flash-card:hover .flash-card-front{
+  display: none;
+}
+
+.flash-card-front, .flash-card-back {
+  backface-visibility: hidden;
+}

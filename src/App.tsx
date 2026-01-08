@@ -1,3 +1,4 @@
+import { FlashCard } from "./components/flashcard/FlashCard"
 import { Loading1 } from "./components/loadingAnimation/Loading1"
 import { Loading2 } from "./components/loadingAnimation/Loading2"
 import { RgbButton } from "./components/rgbButton/RgbButton"
@@ -16,7 +17,8 @@ function App() {
       {/* <Loading1/> */}
       {/* <Loading2/> */}
       {/* <WordCarousel/> */}
-      <ToggleSwich/>
+      {/* <ToggleSwich/> */}
+      <FlashCard/>
     </>
   )
 }
