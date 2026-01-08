@@ -1,0 +1,34 @@
+
+.loading2-container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading2-square {
+  height: 1.5em;
+  width: 1.5em;
+  margin: .5em;
+  animation: loading2-rotate infinite 1s;
+}
+.loading2-square1 {
+  background: red;
+}
+.loading2-square2 {
+  background: green;
+
+}
+.loading2-square3 {
+  background: blue;
+}
+
+@keyframes loading2-rotate {
+  from{
+    transform: rotate(-45deg);
+  }
+  to{
+    transform: rotate(45deg);
+  }
+}
+
